@@ -1,0 +1,71 @@
+@font-face {
+  font-family: normal-ppf;
+  src: url(fonts/PPFragment-SansRegular.ttf);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+.canvas-container {
+  width: 100%;
+  height: 100vh;
+  /*   min-width:600px; */
+  /*   min-height:600px; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.canvas-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#marquee {
+  border: 2px solid black;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  font-family: normal-ppf;
+  font-size: 34px;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 108px);
+  /*   border:2px solid white; */
+  border-radius: 20px;
+  /*   background:grey; */
+  margin: auto;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 20px;
+}
+.item {
+  /*   border:2px solid pink;
+  background:skyblue; */
+  display: inline-block;
+  flex-shrink: 0;
+  flex-grow: auto;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+/* Hide scroll bars */
+.container::-webkit-scrollbar {
+  width: 0; /* Hide the horizontal scroll bar */
+}

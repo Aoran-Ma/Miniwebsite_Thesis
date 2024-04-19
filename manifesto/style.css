@@ -1,0 +1,86 @@
+@font-face {
+  font-family: normal-ppf;
+  src: url(fonts/PPFragment-SansRegular.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+.canvas-container {
+  width: 100%;
+  height: 100vh;
+  /*   min-width:600px; */
+  /*   min-height:600px; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.canvas-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+#marquee {
+  border: 2px solid black;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  position: absolute;
+  font-family: normal-ppf;
+  font-size: 34px;
+}
+
+#image-container {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 5;
+  width: calc(100% - 55px);
+  height: calc(100vh - 55px);
+  max-height: calc(100vh - 64px);
+
+  /*   background:blue; */
+  /*   border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden;
+}
+.image-wrapper {
+  display: inline-block;
+
+  object-fit: contain;
+  height: auto; /* Allow images to take their natural width */
+  max-width: 400px;
+  width: 100%; /* Make images fill the height of the container */
+  /*   margin-right: 10px; Add some spacing between images */
+  display: flex;
+}
+#svg-text {
+  max-width: 80%;
+}
+.image-wrapper img {
+  max-width: 100%; /* Make sure the image doesn't exceed the width of its container */
+  max-height: 100%; /* Make sure the image doesn't exceed the height of its container */
+  object-fit: contain; /* Fit the image inside its container without stretching */
+}
+
+/* Hide scroll bars */
+#image-container::-webkit-scrollbar {
+  width: 0; /* Hide the horizontal scroll bar */
+}
+
+/* Optionally, you can also hide the vertical scroll */
+#image-container::-webkit-scrollbar-thumb {
+  display: none; /* Hide the scrollbar thumb */
+}

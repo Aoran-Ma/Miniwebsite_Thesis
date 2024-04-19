@@ -1,0 +1,7 @@
+collection_letter_01.png
+collection_letter_02.png
+collection_letter_03.png
+collection_letter_04.png
+collection_letter_05.png
+collection_letter_06.png
+collection_shape_01.png

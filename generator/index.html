@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../lib/p5.min.js"></script>
+    <script src="../lib/matter.js"></script>
+    <script src="../lib/decomp.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main></main>
+    <div id="wrappper">
+      <div id="controls">
+        <div class="pannel plannel-1">
+          <div class="pannel sub1-1">
+            <textarea id="text-input" placeholder="Text(Centered)"></textarea>
+          </div>
+          <div class="pannel sub1-2">
+            <button id="enter-button">Enter</button>
+            <button id="reset-button">Reset</button>
+          </div>
+          <div class="pannel sub1-3">
+            <button class="sub1-3-font" id="font">Font</button>
+            <button id="font-1">1</button>
+            <button id="font-2">2</button>
+            <button id="font-3">3</button>
+          </div>
+        </div>
+        <div class="pannel plannel-2">
+          <div class="pannel sub2-1">
+            <button id="fill_button">Fill</button>
+            <button id="back_button">Back</button>
+          </div>
+          <div class="pannel sub2-2">
+            <button class="color" id="color-ED2625" value="#ED2625"></button>
+            <button class="color" id="color-F58220" value="#F58220"></button>
+            <button class="color" id="color-FDB922" value="#FDB922"></button>
+            <button class="color" id="color-FFE62C" value="#FFE62C"></button>
+
+            <button class="color" id="color-04A651" value="#04A651"></button>
+            <button class="color" id="color-08ADEF" value="#08ADEF"></button>
+            <button class="color" id="color-005BA9" value="#005BA9"></button>
+            <button class="color" id="color-81298F" value="#81298F"></button>
+
+            <button class="color" id="color-E1288C" value="#E1288C"></button>
+            <button class="color" id="color-F7C1D9" value="#F7C1D9"></button>
+            <button class="color" id="color-000000" value="#000000"></button>
+            <button class="color" id="color-ffffff" value="#ffffff"></button>
+          </div>
+        </div>
+        <div class="pannel plannel-3">
+          <button id="parade">Parade</button>
+          <button id="fragments_btn">Fragments</button>
+          <button id="save_still">Save Still</button>
+          <button id="save_gif">Save Gif</button>
+        </div>
+      </div>
+
+      <div id="canvas-container"></div>
+
+      <div id="marquee">
+        <marquee scrollamount="5">
+          Type in your internal failure as the resistance for heteronormative
+          capitalism.
+        </marquee>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+    <script src="gradientBack.js"></script>
+  </body>
+</html>
